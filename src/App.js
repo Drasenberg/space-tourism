@@ -8,7 +8,6 @@ function App() {
     <div className={classes.App}>
       <Navigation />
       <Routes>
-        
         <Route path="/space-tourism/home" element={<HomePage />}></Route>
       </Routes>
     </div>
