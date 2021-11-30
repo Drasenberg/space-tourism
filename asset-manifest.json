@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/space-tourism/static/css/main.99e1c03e.chunk.css",
-    "main.js": "/space-tourism/static/js/main.8a9c64f1.chunk.js",
-    "main.js.map": "/space-tourism/static/js/main.8a9c64f1.chunk.js.map",
+    "main.css": "/space-tourism/static/css/main.7ac52671.chunk.css",
+    "main.js": "/space-tourism/static/js/main.94d3a28c.chunk.js",
+    "main.js.map": "/space-tourism/static/js/main.94d3a28c.chunk.js.map",
     "runtime-main.js": "/space-tourism/static/js/runtime-main.6130b631.js",
     "runtime-main.js.map": "/space-tourism/static/js/runtime-main.6130b631.js.map",
-    "static/js/2.9545c8bf.chunk.js": "/space-tourism/static/js/2.9545c8bf.chunk.js",
-    "static/js/2.9545c8bf.chunk.js.map": "/space-tourism/static/js/2.9545c8bf.chunk.js.map",
+    "static/js/2.c4cf18ae.chunk.js": "/space-tourism/static/js/2.c4cf18ae.chunk.js",
+    "static/js/2.c4cf18ae.chunk.js.map": "/space-tourism/static/js/2.c4cf18ae.chunk.js.map",
     "index.html": "/space-tourism/index.html",
-    "static/css/main.99e1c03e.chunk.css.map": "/space-tourism/static/css/main.99e1c03e.chunk.css.map",
-    "static/js/2.9545c8bf.chunk.js.LICENSE.txt": "/space-tourism/static/js/2.9545c8bf.chunk.js.LICENSE.txt",
+    "static/css/main.7ac52671.chunk.css.map": "/space-tourism/static/css/main.7ac52671.chunk.css.map",
+    "static/js/2.c4cf18ae.chunk.js.LICENSE.txt": "/space-tourism/static/js/2.c4cf18ae.chunk.js.LICENSE.txt",
     "static/media/App.module.scss": "/space-tourism/static/media/background-home-mobile.13f7adec.jpg",
     "static/media/icon-close.d47fda63.svg": "/space-tourism/static/media/icon-close.d47fda63.svg",
     "static/media/icon-hamburger.5273efa7.svg": "/space-tourism/static/media/icon-hamburger.5273efa7.svg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6130b631.js",
-    "static/js/2.9545c8bf.chunk.js",
-    "static/css/main.99e1c03e.chunk.css",
-    "static/js/main.8a9c64f1.chunk.js"
+    "static/js/2.c4cf18ae.chunk.js",
+    "static/css/main.7ac52671.chunk.css",
+    "static/js/main.94d3a28c.chunk.js"
   ]
 }
