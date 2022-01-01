@@ -12,12 +12,15 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+  margin-top: 3em;
   h5 {
-    font-family: $ffPrimary;
+    font-family: $ffSecondary;
     font-size: 1em;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 3px;
+    color: $clr-primary-100;
   }
   h1 {
     font-family: $ffPrimary;
@@ -32,6 +35,58 @@
     line-height: 25px;
     font-weight: 400;
     text-align: center;
-    width: 100%;
+    width: 350px;
+    color: $clr-primary-100;
+  }
+  button {
+    margin-top: 20%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-family: $ffPrimary;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    border: 0;
+    &:hover {
+      box-shadow: 0 0 0 40px hsla(0, 0%, 100%, 0.3);
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .home {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    .about{ 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h5 {
+        font-size: 28px;
+        letter-spacing: 5px;
+      }
+      h1 {
+        font-size: 150px;
+        letter-spacing: 0;
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+        text-align: justify;
+        width: 444px;
+      }
+    }
+    button {
+      margin: 0;
+      margin-bottom: 2em;
+      align-self: flex-end;
+      width: 200px;
+      height: 200px;
+    }
   }
 }

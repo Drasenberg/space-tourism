@@ -4,7 +4,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   .logo {
     margin-top: 1.5em;
     margin-left: 2em;
@@ -18,34 +18,33 @@ nav {
     backdrop-filter: none !important;
   }
   .menu {
-    position: fixed;
-    right: 0;
+    z-index: 10000;
     width: 250px;
     background-color: hsla(0, 0%, 100%, 0.1);
     backdrop-filter: blur(1rem);
     display: flex;
     justify-content: flex-end;
-    flex-direction: column;
     font-family: $ffSecondary;
     font-size: 16px;
     .toggle {
       margin: 2em;
       align-self: flex-end;
     }
-    .menuClosed {
-      display: none;
-    }
-    .menuOpen {
+    .tabletNav {
       display: flex;
-      flex-direction: column;
     }
     ul {
-      padding-inline: 0;
-      height: 100vh;
-      width: 250px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-inline: 2em;
+      width: 450px;
       list-style-type: none;
       color: $clr-neutral-100;
       gap: 2em;
+      background-color: hsla(0, 0%, 100%, 0.1);
+      backdrop-filter: blur(1rem);
+
       a {
         margin-left: 20px;
         color: $clr-neutral-100;
@@ -55,6 +54,7 @@ nav {
         font-weight: 400;
         position: relative;
         span {
+          display: none;
           font-weight: 700;
         }
       }
@@ -62,10 +62,64 @@ nav {
         &::after {
           content: "";
           width: 100%;
-          height: 2px;
+          height: 3px;
           position: absolute;
-          bottom: -2px;
+          bottom: -20px;
           background-color: $clr-neutral-100;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .tabletNav {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav {
+    height: 96px;
+    align-items: center;
+    .menu {
+      ul {
+        width: 830px;
+        margin-top: 1.5em;
+        height: 96px;
+        position: relative;
+        a {
+          span {
+            display: flex !important;
+          }
+          &:hover::after {
+            content: "";
+            width: 100%;
+            height: 3px;
+            opacity: 0.2;
+            position: absolute;
+            bottom: -38px;
+            background-color: $clr-neutral-100;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: white;
+          opacity: 0.2;
+          height: 1px;
+          width: 60%;
+          left: -55%;
+        }
+        .active {
+          &::after {
+            bottom: -38px;
+          }
         }
       }
     }
